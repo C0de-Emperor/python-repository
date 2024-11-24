@@ -170,7 +170,7 @@ Toutefois, il se peut qu'au cours d'une boucle vous ayez besoin des indices, auq
 
 animaux = ["girafe", "tigre", "singe", "souris"]
 for i in range(len(animaux)):
-    # Ici les {} servent à introduire des éléments dans des chaines de caractères : !!! le f devant la chaine de caractère est très important
+    # Ici les {} servent à introduire des variables dans des chaines de caractères : !!! le f devant la chaine de caractère est très important
     print("12   : ", f"L'animal {i} est un(e) {animaux[i]}")
 
 """
