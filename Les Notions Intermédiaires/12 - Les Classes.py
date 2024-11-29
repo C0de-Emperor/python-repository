@@ -333,7 +333,7 @@ if __name__ == "__main__":
 
 """
 Ligne 4. Nous appelons ici la méthode .affiche_message() depuis le constructeur. 
-    Pour appeler cette méthode interne à la classe Citron, on doit utiliser une syntaxe self.méthode(). 
+    Pour appeler cette méthode interne à la classe Citron, on doit utiliser une syntaxe self.methode(). 
     Le self sert donc pour accéder aux attributs, mais aussi aux méthodes, ou plus généralement à tout ce qui est accroché à la classe.
 
 Lignes 6 et 7. La méthode .affiche_message() est exécutée. 
