@@ -149,4 +149,64 @@ for k in range(len(liste)):                           # on boucle dans la liste
     liste[indiceDuMinimum], liste[k] = liste[k], liste[indiceDuMinimum]  # on permute le minimum et le premier élément de la liste non triée
 
 
-print("3 :", liste)
+print("4:", liste)
+
+
+"""
+            TRI PAR BULLES
+
+Principe général:
+
+On compare les deux premiers éléments: si le 1er élément est plus grand que le deuxième, on les inverse. Sinon, on compare le 2e et 3e élément.
+Chaque fois qu'on en invertit deux, on recommence depuis LE DEBUT. (C'est pourquoi cet algorithme de tri est terriblement inefficace)
+Ainsi, on a:
+
+[0 , 89 , -7 , 18 , 52 , 3]
+
+On pointe à l'indice 0.
+0<89 donc tout va bien.
+
+On pointe à l'indice 1.
+89>-7 donc on les intervertit. On a donc:
+[0 , -7 , 89 , 18 , 52 , 3]
+
+On pointe à l'indice 0.
+0>-7 donc on les intervertit. On a donc:
+[-7 , 0 , 89 , 18 , 52 , 3]
+
+On pointe à l'indice 0.
+-7<0 donc tout va bien.
+
+On pointe à l'indice 1.
+0<89 donc tout va bien.
+
+On pointe à l'indice 2.
+89>18 donc on les intervertit. On a donc:
+[-7 , 0 , 18 , 89 , 52 , 3]
+
+On pointe à l'indice 1.  ((❁´◡`❁))
+......
+
+Et on continue jusqu'on n'ait aucune interversion dans un tour de boucle.
+
+En code, ça donne:
+"""
+
+liste=[0 , 89 , -7 , 18 , 52 , 3]
+
+i=0                                                     # on initialise notre variable pointeur
+intervertit=True                                        # intervertit sera True si il y a eu interversion et False sinon
+while intervertit==True:                                # littéralement: TANT QU'il y a eu interversion
+    intervertit=False                                   # on part du principe qu'il n'y aura pas d'interversion
+    while i<len(liste)-1 and intervertit==False:        # littéralement: TANT QU'on n'est pas arrivés à la fin de la liste ET qu'il n'y a pas eu d'interversion
+        if liste[i]>liste[i+1]:                         # si l'élément pointé par i est plus grand que le suivant
+            liste[i],liste[i+1] = liste[i+1],liste[i]   # on inverse les éléments d'indices i et i+1
+            intervertit=True                            # il y a eu interversion
+            i=-1                                        # on repart du début (!!!! i=-1 car la ligne i+=1 suivante sera lue après la fin du if)
+        i+=1                                            # on incrémente i de 1
+
+print("5:", liste)
+
+
+
+#-By Mimile
