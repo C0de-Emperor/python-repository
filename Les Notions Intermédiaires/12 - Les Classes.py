@@ -294,9 +294,9 @@ Lignes 8 et 9. On souhaite que notre méthode .affiche_attributs()
 L'exécution de ce code donnera :
 
 Traceback (most recent call last):
-  File "c:\Users\mttma\Documents\Projets Python\Explication Python.py", line n, in <module>
+  File "c:\\Users\\mttma\\Documents\\Projets Python\\Explication Python.py", line n, in <module>
     citron1.affiche_attributs()
-  File "c:\Users\mttma\Documents\Projets Python\Explication Python.py", line n, in affiche_attributs
+  File "c:\\Users\\mttma\\Documents\\Projets Python\\Explication Python.py", line n, in affiche_attributs
     print("19 : ", variable)
                    ^^^^^^^^
 NameError: name 'variable' is not defined. Did you mean: 'callable'?
@@ -307,7 +307,7 @@ Ligne 2. La méthode .affiche_attributs() montre que le self est bien une réfé
 Ligne 3. La méthode .affiche_attributs() affiche l'attribut .couleur, 
     qui avait été créé précédemment dans le constructeur. 
     Vous voyez ici l'intérêt principal de l'argument self passé en premier à chaque méthode d'une classe : 
-        il « accroche » n'importe quel attribut qui sera visible partout dans la classe, y compris dans une méthode où il n'a pas été défini.
+        il " accroche " n'importe quel attribut qui sera visible partout dans la classe, y compris dans une méthode où il n'a pas été défini.
 
 Lignes 4 à 9. La création de la variable var dans la méthode .__init__() 
     sans l'accrocher à l'objet self fait qu'elle n'est plus accessible en dehors de .__init__(). 
