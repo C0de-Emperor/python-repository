@@ -141,8 +141,8 @@ print("12 : ", z)           # Va retourner : 3
 # Itérations sur plusieurs valeurs à la fois :
 
 """
-Nous avons déjà croisé les tuples avec la fonction enumerate() dans le chapitre 5 Boucles et comparaisons. 
-Cette dernière permettait d'itérer en même temps sur les indices et les éléments d'une liste :
+Nous reverons la fonction enumerate() et les tuple dans le chapitre 6 Les Boucles For. 
+Cette dernière permet d'itérer en même temps sur les indices et les éléments d'une liste :
 """
 
 for indice, element in enumerate([75, -75, 0]):
